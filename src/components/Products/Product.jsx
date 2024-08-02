@@ -14,11 +14,13 @@ function Product() {
     <section className="w-screen bg-selected">
       <div className="container w-full h-screen flex">
         <div className="w-1/2 h-4/5">
-          <img
-            src={product.image}
-            alt={product.image_name}
-            className="w-full h-full object-contain"
-          />
+          <div className="h-full m-auto" style={{ width: "98%" }}>
+            <img
+              src={product.image}
+              alt={product.image_name}
+              className="w-full h-full object-contain"
+            />
+          </div>
         </div>
         <div className="product-content text-primary w-1/2 h-4/5">
           <div className="h-full m-auto" style={{ width: "98%" }}>
